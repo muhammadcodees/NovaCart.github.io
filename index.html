@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCart | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+  <div class="logo"><span>Nova</span>Cart</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Modern Shopping Experience</h1>
+    <p>
+      Buy premium gadgets, sneakers and accessories with style.
+    </p>
+
+    <a href="products.html">
+      <button>Shop Now</button>
+    </a>
+  </div>
+</section>
+<section class="products">
+
+  <h2>Featured Products</h2>
+
+  <div class="product-container">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000">
+      <h3>Nike Sneakers</h3>
+      <p>$120</p>
+      <button onclick="addToCart('Nike Sneakers',120)">Add To Cart</button>
+    </div>
+<div class="card">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000">
+      <h3>Luxury Watch</h3>
+      <p>$180</p>
+      <button onclick="addToCart('Luxury Watch',180)">Add To Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000">
+      <h3>iPhone 15 Pro</h3>
+      <p>$999</p>
+      <button onclick="addToCart('iPhone 15 Pro',999)">Add To Cart</button>
+    </div>
+
+  </div>
+</section>
+<footer>
+  <p>© 2026 NovaCart Store</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#222;
+}
+
+header{
+background:#0f172a;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+.logo{
+font-size:32px;
+font-weight:700;
+color:white;
+}
+
+.logo span{
+color:#3b82f6;
+}
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-text{
+max-width:600px;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+.hero p{
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.hero button,
+.card button,
+.checkout-btn,
+.checkout-form button,
+.contact-form button{
+padding:14px 30px;
+border:none;
+background:#3b82f6;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+.products{
+padding:80px 8%;
+}
+
+.products h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+}
+
+.product-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.card h3,
+.card p{
+padding:15px;
+}
+.page-banner{
+background:#111827;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.cart-section,
+.checkout-section,
+.about-section,
+.contact-section{
+padding:80px 8%;
+}
+
+#cart-items{
+background:white;
+padding:30px;
+border-radius:10px;
+margin-bottom:20px;
+}
+.checkout-form,
+.contact-form,
+.about-box{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+max-width:600px;
+margin:auto;
+}
+
+.checkout-form input,
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+footer{
+background:#020617;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+text-align:center;
+}
+.hero{
+height:auto;
+padding:120px 20px;
+text-align:center;
+justify-content:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.products h2{
+font-size:32px;
+}
+
+}
+@media(max-width:480px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+}
